@@ -1,0 +1,118 @@
+*{
+  padding:0;
+  margin:0;
+}
+body{
+  width:360px;
+  background-color:#101335;
+  font-family: "Inter", system-ui, sans-serif;
+}
+.contenr{
+  position:relative;
+}
+.hade{
+  position :flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+h1{
+  padding: 8px;
+  border-radius: 20px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 80px;
+  color:#FFFFFF;
+  box-shadow: inset 5px 5px 12px #FFFFFF, inset -5px -5px 12px#000000;
+}
+#pdfLogo{
+  height:100px;
+  width:100px;
+  border:none;
+  box-shadow:  5px 5px 15px#000000,inset 3px 3px 15px#F9F9FF;
+  display: inline-block;
+  position:absolute;
+  left:15px;
+  top:30px;
+  border-radius:50%;
+}
+#fileinput{
+  position: absolute;
+  border:2px solid#000000;
+  height:24px;
+  width:180px;
+  top:10px;
+  right:50px;
+  border-radius:5px;
+  color:#FFE405;
+}
+#pdfCanvas{
+  position: absolute;
+  height:120px;
+  width:100px;
+  border:none;
+  box-shadow: inset 5px 5px 15px#F9F9FF,5px 5px 15px #000000;
+  top:40px;
+  right:128px;
+  border-radius:10px;
+}
+input{
+  width:180px;
+}
+#output{
+  width: 100%;
+  background: var(--card);
+  border: 1px solid #42445A00;
+  color:#F2F1ED;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 10px;
+  resize: vertical;
+  height:980px;
+}
+.buttonPdf{
+  position: fixed;
+  height:50px;
+  width:50px;
+  z-index:3;
+  bottom:50vw;
+  border-radius:40%;
+  background-color:#00000000;
+  border:none;
+  text-shadow: -2px -2px 10px #FCFCFF,5px 5px 10px rgba(0,0,.16);
+  font-size:30px;
+}
+#prev{
+  left:50px;
+  
+}
+#next{
+  right:50px;
+}
+#speakBtn{
+  left:120px;
+}
+#stopBtn{
+  right:120px;
+}
+#cleanPdf{
+  position: absolute;
+  top:90px;
+  right:50px;
+  
+}
+button { 
+  cursor: pointer; 
+}
+
+/* Smooth highlight animation */
+.highlight-active {
+  background-color: rgba(255, 255, 0, 0.6);
+  border-radius: 6px;
+  transition: background-color 0.4s ease;
+}
+
+.highlight-fadeout {
+  background-color: transparent;
+  transition: background-color 0.4s ease;
+}
